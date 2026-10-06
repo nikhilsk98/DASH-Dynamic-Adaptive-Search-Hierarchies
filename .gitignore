@@ -1,0 +1,19 @@
+# Build output
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Benchmark maps and scenarios are not committed (see data/README.md)
+data/*.map
+data/*.scen
+
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
+.env
