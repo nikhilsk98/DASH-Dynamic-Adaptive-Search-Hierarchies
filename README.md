@@ -1,6 +1,7 @@
 # DASH: Adaptive Pathfinding with Local Search Probes
 
 **Authors:** Nikhil Shivakumar, Anuj Chobe, Rajiv Menon
+
 CS5800 Algorithms course project, Northeastern University
 
 DASH is an A*-based pathfinder that watches for stagnation, launches a short bounded local search (a probe) to escape the stalled region, and merges the probe's route back into the main search as a macro-edge. This repository contains a C++17 implementation, a Python reference port, a test suite, and a benchmark runner for MovingAI grid maps.
@@ -134,7 +135,7 @@ The report table counts global expansions only, so probe work is not visible in 
 - **Cost.** DASH returns the same cost as A* in every test and on the benchmark runs above.
 - **Global expansions.** DASH ties A*. Its saving is tiny: 64 fewer global expansions in the reproducible run.
 - **Total work.** Counting probe expansions, DASH did about 10.6 times the work of A* in the reproducible run, and 362 of its 367 probes failed. That is why it is slower in wall-clock time.
-- **Weighted A*.** In the course report it expanded about 3.8 times as many nodes as A* on `64room_005`. The synthetic map does not reproduce that: Weighted A* expanded fewer nodes than A* there. The blow-up depends on the map.
+- **Weighted A\*.** In the course report it expanded about 3.8 times as many nodes as A\* on `64room_005`. The synthetic map does not reproduce that: Weighted A\* expanded fewer nodes than A\* there. The blow-up depends on the map.
 
 The practical lesson: an adaptive mechanism only pays off when the global work it avoids exceeds the cost of detecting a stall and running the probe. With a naive trigger and a probe that is itself an A*, that did not happen on these room maps.
 
