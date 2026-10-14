@@ -168,7 +168,3 @@ make
 
 - P. E. Hart, N. J. Nilsson, B. Raphael. A formal basis for the heuristic determination of minimum cost paths. IEEE Trans. Systems Science and Cybernetics, 1968.
 - N. R. Sturtevant. Benchmarks for grid-based pathfinding. IEEE Trans. Computational Intelligence and AI in Games, 4(2):144-148, 2012.
-
-## License
-
-MIT License. See [`LICENSE`](LICENSE).
